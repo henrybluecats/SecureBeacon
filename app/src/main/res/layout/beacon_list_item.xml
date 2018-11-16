@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:id="@+id/tv_btaddr"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_mac"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mac"
+            android:id="@+id/tv_rssi_name"
+            android:text="RSSI:"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mac"
+            android:layout_toRightOf="@+id/tv_rssi_name"
+            android:id="@+id/tv_rssi"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mac"
+            android:id="@+id/tv_dist_name"
+            android:layout_toLeftOf="@+id/tv_dist"
+            android:text=" Dist:"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mac"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_dist"
+    />
+
+
+</RelativeLayout>
